@@ -7,6 +7,7 @@ const App = () => {
   return (
     <>
      <Todo /> 
+    <h1>Hi Julie</h1>
     </>
   );
 
