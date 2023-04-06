@@ -68,7 +68,7 @@ button {
     border-radius: 5px;
     font-family: 'Times New Roman';
     color:white;
-    background: linear-gradient(blue, purple);
+    background-color: blue;
     border:none;   
 } 
 
