@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Todo() {
   const [val, setVal] = useState();
-  const [arr, setArr] = useState(["Sweetlin", "Juliet", "John"]);
+  const [arr, setArr] = useState(["Do Exercise", "Learn somthing new", "read the books"]);
   const [active, setActive] = useState();
   const [input, setInput] = useState("");
 
@@ -72,9 +72,11 @@ function Todo() {
           value={val}
           onChange={onChange}
         />
-        <button  type="submit" onClick={addButton}>
+       {val? (<button  type="submit" onClick={addButton}>
           + Add
-        </button>
+        </button>) : (<button  type="submit" >
+          + Add
+        </button>)}
       </form>
       <div id="div2">
         <ol>
