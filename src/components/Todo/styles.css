@@ -1,7 +1,7 @@
 #div1{
     font-family: 'Times New Roman';
     background-color: rgba(0, 140, 255, 0.411);
-    width:50vw;
+    width:45vw;
 margin:auto;
 margin-top:5rem;
 box-shadow: 5px 10px 8px rgba(14, 5, 5, 0.521);
@@ -16,16 +16,19 @@ h1 {
     
 display: flex;
 justify-content: center;
-width:50vw;
+width:40vw;
+/* background-color: yellow; */
+margin-left:10px;
 }
 
 #input1 {
-    width:32vw;
-    height:7vh;
+    width:70%;
+    height:6vh;
     background-color: black;
     color: white;
     font-size: 15px;
-    box-shadow: 3px 5px 5px rgba(14, 5, 5, 0.521);
+    /* box-shadow: 3px 5px 5px rgba(14, 5, 5, 0.521); */
+/* margin-right:3rem; */
 }
 
 #add{
@@ -76,7 +79,7 @@ button {
     font-size: 20px;
     font-family: 'Times New Roman';
     color:white;
-    background: linear-gradient(blue, purple);
+    background-color:green ;
     border: none;
     border-radius: 5px;
     padding:6px;
@@ -91,6 +94,7 @@ margin:1rem;
 
 .delete{
 float:right;
-margin-right: 1rem;
+margin-right: 2.5rem;
+background-color: red;
 }
 
