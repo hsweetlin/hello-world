@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Deploy
-      uses: hsweetlin/hello-world@v2.x
+      uses: hsweetlin/hello-world@2.0.1
       with:
           target_branch: gh-pages
           build_dir: build
