@@ -49,5 +49,5 @@ jobs:
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.TODO }}
+        github_token: ${{ secrets.AUTO_DEPLOY_KEY }}
         repository: ${{ github.repository }}
