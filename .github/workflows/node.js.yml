@@ -29,7 +29,7 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - name: deploy
-        uses: hsweetlin/hello-world@releases/v3
+        uses: hsweetlin/hello-world@main
         with:
           ACCESS_TOKEN: ${{ secrets.AUTO_DEPLOY_KEY }}
           BRANCH: gh-pages
