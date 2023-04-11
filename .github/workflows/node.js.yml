@@ -28,4 +28,12 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm run deploy 
+      - name: Deploy
+        env:
+          MY_EMAIL: hsweetlinjuliet@gmail.com
+          MY_NAME: hsweetlin
+        run: |
+          git config --global user.email $MY_EMAIL
+          git config --global user.name $MY_NAME
+          git remote set-url origin https://$MY_NAME:${{ secrets.todo_auto_deploy }}@github.com/hsweetlin/hello-world.git
+          npm run deploy
