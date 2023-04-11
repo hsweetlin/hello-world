@@ -32,7 +32,8 @@ margin-left:10px;
 }
 
 #add{
-    text-align: center;  
+    text-align: center; 
+    background-color: green; 
 }
 
 b{
