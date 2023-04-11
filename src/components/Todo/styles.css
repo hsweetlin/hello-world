@@ -33,6 +33,8 @@ margin-left:10px;
 
 #add{
     text-align: center; 
+}
+.addButton{
     background-color: green; 
 }
 
