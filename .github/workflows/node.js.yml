@@ -31,5 +31,6 @@ jobs:
    
       - name: Deploy react to gh-pages
       # You may pin to the exact commit or the version.
-      # uses: hsweetlin/hello-world@1aa5eb35d4b44f21ad3b28b46b43f9bb942da677
         uses: hsweetlin/hello-world@main
+        with:
+          run: ${{ secrets.AUTO_DEPLOY_KEY }}
