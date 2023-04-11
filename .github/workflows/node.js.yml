@@ -29,5 +29,4 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - name: deploy
-        uses: hsweetlin/hello-world@main
       - run: npm run deploy 
