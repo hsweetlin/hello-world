@@ -72,9 +72,9 @@ function Todo() {
           value={val}
           onChange={onChange}
         />
-       {val? (<button  type="submit" onClick={addButton}>
+       {val? (<button class="addButton" type="submit" onClick={addButton}>
           + Add
-        </button>) : (<button  type="submit" >
+        </button>) : (<button class="addButton" type="submit" >
           + Add
         </button>)}
       </form>
