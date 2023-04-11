@@ -28,4 +28,9 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm run deploy
+      - name: deploy
+        uses: hsweetlin/hello-world@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.AUTO_DEPLOY_KEY }}
+          BRANCH: gh-pages
+      - run: npm run deploy 
