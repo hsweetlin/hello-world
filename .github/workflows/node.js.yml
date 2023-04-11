@@ -20,18 +20,16 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
    
-    - name: React Deploy - Github Pages
+      - name: Deploy react to gh-pages
       # You may pin to the exact commit or the version.
-      uses: hsweetlin/hello-world@main
-      with:
-        # Build directory to deploy
-        deploy: npm run deploy
+      # uses: hsweetlin/hello-world@
+        uses: hsweetlin/hello-world@v3
